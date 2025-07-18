@@ -6,6 +6,12 @@
   position: relative;
 }
 
+.logo-link {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -14,11 +20,6 @@ ul {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-
-.logo {
-  display: flex;
-  margin: 0;
 }
 
 .nav {
@@ -30,7 +31,6 @@ ul {
   color: #060b35;
   height: 60px;
   line-height: 60px;
-
   display: flex;
   align-items: center;
 }
@@ -42,6 +42,7 @@ ul {
 a {
   text-decoration: none;
   color: #060b35;
+  height: 60px;
 }
 
 a:hover {
@@ -54,15 +55,17 @@ a:hover {
   position: relative;
   color: #00acdc;
   transition: color 300ms;
+  height: 60px;
+  box-sizing: border-box;
 }
 
 .is-active::after {
   content: '';
+  position: absolute;
   display: block;
   background-color: #00acdc;
   height: 4px;
   width: 100%;
   bottom: 0;
   border-radius: 2px;
-  
 }
